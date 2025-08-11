@@ -1,0 +1,77 @@
+/* Navbar base styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgb(196, 84, 148); /* Menu background pink */
+  padding: 10px 20px;
+  border-bottom: 2px solid #f4c542;
+}
+
+.heading-with-image {
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  height: 150px;
+  margin-left: 10px;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.menu-toggle {
+  display: none; /* hidden on desktop */
+  font-size: 26px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Banner image size */
+.banner-container .banner-image {
+  height: 30rem;
+  width: 100%;
+  object-fit: cover; /* keeps aspect ratio */
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  ul {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: rgb(196, 84, 148);  /* also pink on mobile */
+    flex-direction: column;
+    width: 200px;
+    display: none; /* hide by default */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  }
+
+  ul.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block; /* show hamburger on mobile */
+  }
+}
+.round-logo {
+  width: 100px;       /* adjust size as needed */
+  height: 100px;      /* keep width and height equal */
+  border-radius: 50%; /* makes it perfectly round */
+  object-fit: cover;  /* ensures image covers the area without distortion */
+  /* optionally add a border or shadow */
+  border: 2px solid #333;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}

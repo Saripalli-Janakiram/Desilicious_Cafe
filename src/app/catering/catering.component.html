@@ -1,0 +1,29 @@
+<div class="container">
+  <h2 class="title">Catering Services</h2>
+  <h4 class="heading">Catering for Every Celebration 🌟</h4>
+  <p class="heading">Weddings | Office Lunches | Housewarmings | Pujas & More</p>
+  <p>
+At Desilicious Cafe, we believe great food brings people together.
+Our catering service delivers fresh, flavorful 100% vegetarian cuisine made with love and tradition.
+Whether you're planning a grand wedding, a cozy housewarming, a corporate lunch, or a spiritual puja,
+we've got you covered — with customizable Vegan and Jain (No Onion, No Garlic) options too
+Let us add a delicious touch to your special day.<br>
+
+Pure Taste. Thoughtful Service. Truly Desilicious. 🌿
+
+
+  </p>
+  <div *ngFor="let category of categories" class="category-section">
+    <h3 class="category-title">{{ category.category }}</h3>
+    <div class="card-grid">
+      <div class="item-card" *ngFor="let item of category.list">
+        <div class="card-content">
+          🍛 {{ item }}
+        </div>
+      </div>
+    </div>
+  </div>
+
+        <a href="assets\Catering_Menu_Desilicious_Cafe.pdf" download="Menu.pdf">Download PDF</a>
+</div>
+

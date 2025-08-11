@@ -1,0 +1,28 @@
+<nav class="navbar">
+  <div class="heading-with-image">
+    <h1>Desilicious Cafe</h1>
+    <img src="/assets/Images/vegetarian.png" alt="Cafe Logo" class="logo-img round-logo" />
+  </div>
+
+  <!-- Hamburger menu button for mobile -->
+  <button class="menu-toggle" (click)="toggleMenu()">
+    &#9776; <!-- ☰ icon -->
+  </button>
+
+  <ul [class.active]="menuOpen">
+    <li><a href="#about" (click)="closeMenu()">About Us</a></li>
+    <li><a href="#menu" (click)="closeMenu()">Menu</a></li>
+    <li><a href="#catering" (click)="closeMenu()">Catering</a></li>
+    <li><a href="#contact" (click)="closeMenu()">Contact Us</a></li>
+    <li><a href="https://order.toasttab.com/online/desilicious-cafe" (click)="closeMenu()">Order Now</a></li>
+  </ul>
+</nav>
+
+<div class="banner-container">
+  <img [src]="currentImage" alt="Banner Image" class="banner-image" [class.fade]="fade" />
+</div>
+
+<div id="about"><app-about></app-about></div>
+<div id="menu"><app-menu></app-menu></div>
+<div id="catering"><app-catering></app-catering></div>
+<div id="contact"><app-contact></app-contact></div>

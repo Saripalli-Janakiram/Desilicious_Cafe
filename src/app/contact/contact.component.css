@@ -1,0 +1,39 @@
+iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+.delivery-partners {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.delivery-partners .logos {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.delivery-partners img {
+  width: 120px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.delivery-partners img:hover {
+  transform: scale(1.05);
+}
+
+.qr-section {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.qr-img {
+  width: 200px;
+  height: auto;
+  margin-top: 0.5rem;
+}
